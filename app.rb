@@ -5,8 +5,8 @@ require("./lib/list")
 also_reload("lib/**/*.rb")
 require 'pg'
 
-# DB = PG.connect({:dbname => 'to_do'})
-DB = PG.connect({:dbname => 'to_do_test'})
+DB = PG.connect({:dbname => 'to_do'})
+# DB = PG.connect({:dbname => 'to_do_test'})
 
 get("/") do
   erb(:index)
